@@ -12,6 +12,11 @@ const Body = () => {
                      * Cannot set property restList of #<Object> which has 
                      * only a getter TypeError: Cannot set property restList 
                      * of #<Object> which has only a getter at onClick
+                     * 
+                     * occurs because you are trying to directly modify the restList
+                     *  imported from ../utils/resList, which is likely defined 
+                     * as a constant or an immutable object. In JavaScript, 
+                     * you cannot reassign or mutate imported constants directly.
                      */
                     listofRestaurants = listofRestaurants.filter(restaurant => restaurant.data.avgRating > 4);
                     console.log(restList);
