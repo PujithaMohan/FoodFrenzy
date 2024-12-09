@@ -44,7 +44,7 @@
 .res-card,
 .card {
   width: 200px;
-  height: 300px;
+  height: 350px;
   padding: 5px;
   background-color: whitesmoke;
   margin: 5px;
@@ -53,9 +53,6 @@
 .res-card:hover {
   cursor: pointer;
   border: 1px solid black;
-}
-.search {
-  padding: 10px;
 }
 
 .res-card-image {
@@ -74,4 +71,10 @@
   background-color: darkblue;
   color: white;
   padding: 10px 20px;
+}
+
+.options {
+  padding: 10px 10px;
+  display: flex;
+  gap: 30%;
 }

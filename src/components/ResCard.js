@@ -3,7 +3,7 @@ import React from 'react';
 
 const ResCard = ({ restData }) => {
     const { name, totalRatingsString, avgRating, totalRatings,
-        deliveryTime, cuisines, cloudinaryImageId } = restData?.info;
+        deliveryTime, cuisines, cloudinaryImageId } = restData?.card?.card?.info;
 
     return (
         <div className='res-card'>
